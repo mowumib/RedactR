@@ -57,9 +57,7 @@ body{
 .text-area{
     display: flex;
     overflow: scroll;
-    scroll-behavior: smooth;
     justify-content: space-between;
-    /* align-items: center; */
     height: 150px;
     width: 320px;
     background: rgba(229, 229, 229, 0.58);
@@ -84,7 +82,6 @@ input:focus{
 .copy{
     border: none;
     cursor: pointer;
-    /* position: fixed; */
 }
 .copy:active{
     transform: scale(.98);
