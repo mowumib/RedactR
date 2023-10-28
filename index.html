@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Redact</title>
+
+    <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="url-container">
+            <div class="header">RedactR</div>
+
+            <div class="content input_value">
+                <input type="text" class="initial-text" id="initial-text" placeholder="Paste your text..." required>
+            </div>
+            <div class="content input_value">
+                <input type="text" class="scramble-letter" id="scramble-letter" placeholder="Letters to scramble separated by ','" required>
+            </div>
+            <div class="content input_value">
+                <input type="text" class="redact-symbols" id="redact-symbols" placeholder="Replace with * _ - # ? separated by ','" required>
+            </div>
+
+
+            <div class="text-area">
+                <!-- <textarea  class="scramble-value" id="scramble-value" cols="50" rows="10"></textarea> -->
+                <p class="scramble-value" id="scramble-value"></p>
+                <button class="copy" id="copy" data-clipboard-action="copy" data-clipboard-target="#scramble-value"><img src="images/copy.svg" alt="copy"></button>
+            </div>
+            <button class="redact-btn" id="redact-btn">Redact Now</button>
+            
+        </div>
+
+        
+    </div>
+    <footer>
+        <p>made by <a href="https://github.com/mowumib">Mowumi</a> ♡</p>
+    </footer>
+    
+    <script src="src/js/index.js"></script>
+</body>
+</html>
